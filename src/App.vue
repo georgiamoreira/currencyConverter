@@ -2,16 +2,18 @@
 <template>
  <!-- sempre essa div no inicio -->
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    
+    <Conversor moeda-a="USD" moeda-b="BRL" />
+ <!-- moedaA = moeda-a  -->
+
   </div>
 </template>
 
 <script>
+import Conversor from "./components/Conversor.vue";
 export default {
   name: 'App',
   components: {
-   
+    Conversor
   }
 }
 </script>
