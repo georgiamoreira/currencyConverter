@@ -24,8 +24,9 @@ methods: {
     let de_para = this.moedaA + "_" + this.moedaB;
 
     let url =
-    "http://free.currencyconverterapi.com/api/v5/convert?q="++"&compact=y"
-    de_para +
+    "http://free.currencyconverterapi.com/api/v5/convert?q="+
+    de_para
+    +"&compact=y"
     "L&compact=y";
 
     fetch(url).then(res=>{return res.json})
